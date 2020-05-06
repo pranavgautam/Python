@@ -22,8 +22,13 @@ while abs(ans**2 - x) >= epsilon:
         high = ans
     ans = (high + low)/2.0
  
-print 'numGuesses = ', numGuesses
-print ans, ' is close to square root of ', x
+print 'The program made ', numGuesses, ' guesses in total'
 
 if (math.ceil(ans) ** 2 == x):
-    print math.ceil(ans), ' is the real root'
+    print math.ceil(ans), ' is square root of ', x
+elif (math.floor(ans) ** 2 == x):
+    print math.floor(ans), ' is square root of ', x
+else:
+    print ans, ' is close to square root of ', x
+    print 'On squaring ', ans, ' we get ', ans**2
+        
