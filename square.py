@@ -5,6 +5,6 @@ ans=0
 i=abs(x)
 
 while(i!=0):
-    ans=ans+abs(x)
-    i=i-1
+    ans += abs(x)
+    i -= 1
 print str(x)+'^2 = '+str(ans)

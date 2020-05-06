@@ -8,7 +8,7 @@ while(i!=0):
     if(x>largest_odd):
         if(x%2!=0):
             largest_odd=x
-    i=i-1
+    i -= 1
 
 if(largest_odd!=0):
     print str(largest_odd) + ' is the largest odd number entered.'

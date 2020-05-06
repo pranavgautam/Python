@@ -13,17 +13,18 @@ if abs(x) < 4:
 else:
     while power > 0:
         while root**power < abs(x):
-            root = root + 1
+            root +=  1
         if root**power==abs(x):
-            break          
-        power = power - 1
+            break
+        power -= 1
         root = 2
     if power < 2:
-        print 'power is 1'
+        print 'No root and power pair exists'
     elif x < 0 and power%2 == 0 :
         print 'No root and power pair exists'
     elif x < 0 and power%2 != 0 :
         root = -root
-    print 'Root: ' + str(root)
-    print 'Power: ' + str(power)
+    else:
+        print 'Root: ' + str(root)
+        print 'Power: ' + str(power)
   
